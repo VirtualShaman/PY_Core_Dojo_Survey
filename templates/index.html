@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="header">Dojo Survey</h1>
+        <form action="/result" method="POST">
+            <p>Name:</p>
+            <input class="bars" type="text" name="Name" id="Name">
+            <p>Dojo Location:</p>
+            <select class="bars" name="Locations" id="Locations">
+                <option value="Select">Select A Location</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Online">Online</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Bellview">Bellview</option>
+            </select>
+            <p>Favorite Language:</p>
+            <select class="bars" name="Languages" id="Languages">
+                <option value="Select">Select A Language</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+            </select>
+            <p>Comments:</p>
+            <textarea name="Comment" id="Comment" cols="27" rows="6"></textarea>
+            <input id="submit" class="bars" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
